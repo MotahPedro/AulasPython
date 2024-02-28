@@ -4,7 +4,7 @@ app = Flask(__name__) #Instanciar objeto com flask
 
 @app.route('/') #Definição de rota (Neste caso a rota raiz.)
 def index(): # Função de nome index
-    return 'Ola' #Conteúdo da rota
+    return render_template('minhapagina.html') #Conteúdo da rota
 
 @app.route('/alunos')
 def nova_rota_alunos():
