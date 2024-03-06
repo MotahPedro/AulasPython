@@ -18,9 +18,8 @@ def rota_servicos():
 def rota_contato():
     return render_template('contato.html') #Conteúdo da rota 4
 
-@app.route('/outrarota')
-def outra():
-    return "<p>Olha a tag HTML de paragrafo<p>" \
-    "<img >"
+@app.route('/conteudo')
+def rota_conteudo():
+    return render_template('conteudo.html')
 
 app.run() #Comando de invocação do programa
